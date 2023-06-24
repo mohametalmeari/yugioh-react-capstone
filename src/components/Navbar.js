@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const links = [
   { path: '/', text: 'MainPage' },
-  { path: 'page-one', text: 'PageOne' },
+  { path: 'details-page', text: 'PageOne' },
 ];
 
 const Navbar = () => (
@@ -12,9 +12,9 @@ const Navbar = () => (
         Website Logo
       </NavLink>
     </h1>
-    <ul className="menu">
+    <ul>
       {links.map((link) => (
-        <li className="page-link" key={link.text}>
+        <li key={link.text}>
           <NavLink
             to={link.path}
           >
