@@ -39,11 +39,8 @@ const detailsSlice = createSlice({
               detailsList[index].count += 1;
             }
             state.detailsList = detailsList.sort((a, b) => a.level - b.level);
-          } else {
-            console.log('no race');
           }
         });
-        console.log(detailsList);
         state.isLoading = false;
       })
       .addCase(getCardsDetails.rejected, (state, action) => {

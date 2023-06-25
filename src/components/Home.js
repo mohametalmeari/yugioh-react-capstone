@@ -1,8 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { getTypes } from '../Redux/types/typesSlice';
 import CardsType from './CardsType';
 import headerImg from '../images/5.png';
+import { RefreshIcon } from '../icons';
 
 const Home = () => {
   const { typesList, isLoading } = useSelector((state) => state.types);
@@ -11,10 +13,19 @@ const Home = () => {
     if (typesList.length === 0) {
       dispatch(getTypes());
     }
-  }, [dispatch]);
+  }, [typesList.length, dispatch]);
 
   return (
     <div className="container">
+      <nav>
+        <NavLink
+          to="/"
+          onClick={() => dispatch(getTypes())}
+        >
+          <RefreshIcon />
+        </NavLink>
+        <span>All Cards</span>
+      </nav>
       <header>
         <img className="header-img" src={headerImg} alt="Logo" />
         <div className="header-content">

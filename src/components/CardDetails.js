@@ -3,12 +3,8 @@ import { ArrowIcon } from '../icons';
 
 const CardDetails = ({ cardsRace, cardsCount }) => (
   <div className="card-details">
-    <h3 className="cards-title">
-      {/* &quot;
-      {'Level '} */}
+    <h3 className="race-title">
       {cardsRace}
-      {/* &quot;
-      {' Monster'} */}
     </h3>
     <p>
       {cardsCount}
