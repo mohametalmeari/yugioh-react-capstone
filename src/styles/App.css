@@ -34,6 +34,7 @@ nav {
   align-items: center;
   padding: 1rem 0.6rem;
   background-color: var(--dark-color);
+  font-family: 'Gill Sans', sans-serif;
 }
 
 nav span {
@@ -75,6 +76,14 @@ header {
 h1 {
   white-space: nowrap;
   padding-bottom: 0.4rem;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 600;
+}
+
+h2,
+h3 {
+  font-family: 'Gill Sans', sans-serif;
+  letter-spacing: 1px;
 }
 
 .races-title {
@@ -84,7 +93,7 @@ h1 {
 .list-title {
   background-color: var(--dark-color);
   font-size: 16px;
-  padding: 0.1rem 0.6rem 0.2rem;
+  padding: 0.2rem 0.6rem;
   height: 100%;
 }
 
@@ -138,12 +147,13 @@ h1 {
 .type-title {
   text-align: end;
   padding: 0 0.6rem 0.2rem;
-  font-weight: 700;
+  font-weight: 600;
   z-index: 2;
 }
 
 .race-title {
   flex: 1;
+  font-weight: 600;
 }
 
 .type-count {
