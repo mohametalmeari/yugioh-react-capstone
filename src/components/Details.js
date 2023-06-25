@@ -27,7 +27,7 @@ const Details = () => {
         <span>Type Details</span>
       </nav>
       <header>
-        <img className="header-img" src={type.includes('Monster') ? monsterTypeImg : otherTypeImg} alt="Type" />
+        <img data-testid="img-3" className="header-img" src={type.includes('Monster') ? monsterTypeImg : otherTypeImg} alt="Type" />
         <div className="streched-gap" />
         <div className="header-content">
           <h2 className="races-title">
@@ -40,19 +40,19 @@ const Details = () => {
           </p>
         </div>
       </header>
-      <body>
+      <main>
         <h2 className="list-title">STATS BY RACE</h2>
         <section className="details-list">
           {isLoading && <p>Loading...</p>}
           {!isLoading && detailsList.map((item) => (
             <CardDetails
-              key={item.id}
+              key={item.raceId}
               cardsRace={item.race}
               cardsCount={item.count}
             />
           ))}
         </section>
-      </body>
+      </main>
     </div>
   );
 };

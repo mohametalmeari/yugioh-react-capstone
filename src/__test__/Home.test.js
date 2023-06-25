@@ -1,28 +1,28 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import App from '../App';
 import store from '../Redux/store';
+import Home from '../components/Home';
 
-describe('Total App', () => {
+describe('Home App', () => {
   afterEach(() => cleanup());
   test('renders titles', () => {
     render(
       <MemoryRouter>
         <Provider store={store}>
-          <App />
+          <Home />
         </Provider>
       </MemoryRouter>,
     );
-    expect(screen.getByText(/YU-GI-OH!/i)).toBeInTheDocument();
     expect(screen.getByText(/All Cards/i)).toBeInTheDocument();
+    expect(screen.getByText(/YU-GI-OH!/i)).toBeInTheDocument();
     expect(screen.getByText(/STATS BY TYPE/i)).toBeInTheDocument();
   });
   test('renders header image', () => {
     render(
       <MemoryRouter>
         <Provider store={store}>
-          <App />
+          <Home />
         </Provider>
       </MemoryRouter>,
     );
@@ -32,7 +32,7 @@ describe('Total App', () => {
     render(
       <MemoryRouter>
         <Provider store={store}>
-          <App />
+          <Home />
         </Provider>
       </MemoryRouter>,
     );
@@ -42,7 +42,7 @@ describe('Total App', () => {
     const { container } = render(
       <MemoryRouter>
         <Provider store={store}>
-          <App />
+          <Home />
         </Provider>
       </MemoryRouter>,
     );

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cards Details Component renders Details Page Snapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <nav>
+      <a
+        aria-current="page"
+        class="nav-link active"
+        href="/"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+      <span>
+        Type Details
+      </span>
+    </nav>
+    <header>
+      <img
+        alt="Type"
+        class="header-img"
+        data-testid="img-3"
+        src="1.png"
+      />
+      <div
+        class="streched-gap"
+      />
+      <div
+        class="header-content"
+      >
+        <h2
+          class="races-title"
+        >
+          Union Effect Monster
+        </h2>
+        <p>
+          0
+           
+          cards
+        </p>
+      </div>
+    </header>
+    <main>
+      <h2
+        class="list-title"
+      >
+        STATS BY RACE
+      </h2>
+      <section
+        class="details-list"
+      >
+        <p>
+          Loading...
+        </p>
+      </section>
+    </main>
+  </div>
+</div>
+`;

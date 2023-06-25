@@ -27,7 +27,7 @@ const Home = () => {
         <span>All Cards</span>
       </nav>
       <header>
-        <img className="header-img" src={headerImg} alt="Logo" />
+        <img data-testid="img-1" className="header-img" src={headerImg} alt="Logo" />
         <div className="streched-gap" />
         <div className="header-content">
           <h1>
@@ -40,7 +40,7 @@ const Home = () => {
           </p>
         </div>
       </header>
-      <body>
+      <main>
         <h2 className="list-title">STATS BY TYPE</h2>
         <section className="home-list">
           {isLoading && <p>Loading...</p>}
@@ -53,7 +53,7 @@ const Home = () => {
             />
           ))}
         </section>
-      </body>
+      </main>
     </div>
   );
 };

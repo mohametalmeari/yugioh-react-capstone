@@ -9,14 +9,14 @@ const CardDetails = ({ cardsRace, cardsCount }) => (
     <p>
       {cardsCount}
       {' '}
-      Cards
+      cards
     </p>
     <ArrowIcon />
   </div>
 );
 CardDetails.propTypes = {
   cardsRace: PropTypes.string.isRequired,
-  cardsCount: PropTypes.string.isRequired,
+  cardsCount: PropTypes.number.isRequired,
 };
 
 export default CardDetails;

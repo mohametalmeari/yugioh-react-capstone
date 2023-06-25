@@ -34,7 +34,7 @@ const detailsSlice = createSlice({
           if (item.race) {
             const index = detailsList.findIndex((obj) => obj.race === item.race);
             if (index === -1) {
-              detailsList.push({ race: item.race, count: 1 });
+              detailsList.push({ race: item.race, count: 1, raceId: item.type.replace(/\s+/g, '-') });
             } else {
               detailsList[index].count += 1;
             }

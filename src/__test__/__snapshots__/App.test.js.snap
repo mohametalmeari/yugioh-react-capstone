@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Main Page renders Snapshot 1`] = `
+exports[`Total App renders Snapshot 1`] = `
 <div>
   <div
     class="wrapper"
@@ -37,6 +37,7 @@ exports[`Main Page renders Snapshot 1`] = `
         <img
           alt="Logo"
           class="header-img"
+          data-testid="img-1"
           src="5.png"
         />
         <div
@@ -55,7 +56,7 @@ exports[`Main Page renders Snapshot 1`] = `
           </p>
         </div>
       </header>
-      <body>
+      <main>
         <h2
           class="list-title"
         >
@@ -68,7 +69,7 @@ exports[`Main Page renders Snapshot 1`] = `
             Loading...
           </p>
         </section>
-      </body>
+      </main>
     </div>
   </div>
 </div>
