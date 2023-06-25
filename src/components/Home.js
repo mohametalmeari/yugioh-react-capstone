@@ -28,6 +28,7 @@ const Home = () => {
       </nav>
       <header>
         <img className="header-img" src={headerImg} alt="Logo" />
+        <div className="streched-gap" />
         <div className="header-content">
           <h1>
             YU-GI-OH!

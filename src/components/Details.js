@@ -3,8 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { getCardsDetails } from '../Redux/details/detailsSlice';
 import CardDetails from './CardDetails';
-import headerImg from '../images/5.png';
 import { ChevronIcon } from '../icons';
+import monsterTypeImg from '../images/1.png';
+import otherTypeImg from '../images/2.png';
 
 const Details = () => {
   const type = window.location.pathname.split('/').slice(1).join('/').replace(/-/g, ' ');
@@ -26,7 +27,8 @@ const Details = () => {
         <span>Type Details</span>
       </nav>
       <header>
-        <img className="header-img" src={headerImg} alt="Logo" />
+        <img className="header-img" src={type.includes('Monster') ? monsterTypeImg : otherTypeImg} alt="Type" />
+        <div className="streched-gap" />
         <div className="header-content">
           <h2 className="races-title">
             {type}
