@@ -1,6 +1,6 @@
+import Details from '../components/Details';
+
 const DetailsPage = () => (
-  <div>
-    <p>DetailsPage, soon!</p>
-  </div>
+  <Details />
 );
 export default DetailsPage;

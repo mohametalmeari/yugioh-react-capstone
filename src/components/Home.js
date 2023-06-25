@@ -1,63 +1,45 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { getCards } from '../Redux/cards/cardsSlice';
+import { getTypes } from '../Redux/types/typesSlice';
+import CardsType from './CardsType';
+import headerImg from '../images/5.png';
 
 const Home = () => {
-  const { cardsList, isLoading } = useSelector((state) => state.cards);
+  const { typesList, isLoading } = useSelector((state) => state.types);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getCards());
-    console.log(cardsList);
+    if (typesList.length === 0) {
+      dispatch(getTypes());
+    }
   }, [dispatch]);
 
-  if (isLoading) {
-    return (
-      <div className="home-container">
-        <p>Loading...</p>
-      </div>
-    );
-  }
   return (
-    <div className="home-container">
-      <header className="home-header">
-        <img alt="Logo" />
-        <div>
+    <div className="container">
+      <header>
+        <img className="header-img" src={headerImg} alt="Logo" />
+        <div className="header-content">
           <h1>
             YU-GI-OH!
           </h1>
           <p>
-            5000 cards
+            {typesList.reduce((sum, obj) => sum + obj.count, 0)}
+            {' '}
+            cards
           </p>
         </div>
       </header>
       <body>
-        <h2 className="home-list-header">STATS BY TYPE</h2>
+        <h2 className="list-title">STATS BY TYPE</h2>
         <section className="home-list">
-
-          <div>
-            <img alt=">" />
-            <h3>Trap Card</h3>
-            <p>100 cards</p>
-          </div>
-
-          <div>
-            <img alt=">" />
-            <h3>Spell Card</h3>
-            <p>100 cards</p>
-          </div>
-
-          <div>
-            <img alt=">" />
-            <h3>Trap Card</h3>
-            <p>100 cards</p>
-          </div>
-
-          <div>
-            <img alt=">" />
-            <h3>Spell Card</h3>
-            <p>100 cards</p>
-          </div>
-
+          {isLoading && <p>Loading...</p>}
+          {!isLoading && typesList.map((item) => (
+            <CardsType
+              key={item.typeId}
+              typeId={item.typeId}
+              typeName={item.type}
+              typeCount={item.count}
+            />
+          ))}
         </section>
       </body>
     </div>
