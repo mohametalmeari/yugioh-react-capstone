@@ -6,7 +6,7 @@ import otherTypeImg from '../images/2.png';
 
 const CardsType = ({ typeId, typeName, typeCount }) => (
   <NavLink
-    to={typeId}
+    to={`type-${typeId}`}
   >
     <div className="cards-type">
       <img data-testid="img-2" className="type-img" src={typeName.includes('Monster') ? monsterTypeImg : otherTypeImg} alt="Type" />
@@ -22,7 +22,7 @@ const CardsType = ({ typeId, typeName, typeCount }) => (
   </NavLink>
 );
 CardsType.propTypes = {
-  typeId: PropTypes.number.isRequired,
+  typeId: PropTypes.string.isRequired,
   typeName: PropTypes.string.isRequired,
   typeCount: PropTypes.number.isRequired,
 };

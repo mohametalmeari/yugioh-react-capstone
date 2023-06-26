@@ -46,7 +46,7 @@ const Home = () => {
           {isLoading && <p>Loading...</p>}
           {!isLoading && typesList.map((item) => (
             <CardsType
-              key={item.typeId}
+              key={item.typeKey}
               typeId={item.typeId}
               typeName={item.type}
               typeCount={item.count}

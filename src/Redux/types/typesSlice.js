@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
+import uuid from 'react-uuid';
 
 const url = 'https://db.ygoprodeck.com/api/v7/cardinfo.php';
 export const getTypes = createAsyncThunk(
@@ -33,7 +34,9 @@ const typesSlice = createSlice({
         action.payload.forEach((item) => {
           const index = typesList.findIndex((obj) => obj.type === item.type);
           if (index === -1) {
-            typesList.push({ type: item.type, count: 1, typeId: item.type.replace(/\s+/g, '-') });
+            typesList.push({
+              type: item.type, count: 1, typeId: item.type.replace(/\s+/g, '-'), typeKey: uuid(),
+            });
           } else {
             typesList[index].count += 1;
           }

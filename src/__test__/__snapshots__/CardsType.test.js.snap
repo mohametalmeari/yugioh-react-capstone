@@ -3,9 +3,8 @@
 exports[`Cards Type Component renders Type Snapshot 1`] = `
 <div>
   <a
-    aria-current="page"
-    class="active"
-    href="/"
+    class=""
+    href="/type-888"
   >
     <div
       class="cards-type"

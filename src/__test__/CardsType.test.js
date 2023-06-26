@@ -8,8 +8,8 @@ describe('Cards Type Component', () => {
     render(
       <MemoryRouter>
         <CardsType
-          key={999}
-          typeId={999}
+          key="777"
+          typeId="777"
           typeName="Spell Card"
           typeCount={50}
         />
@@ -22,8 +22,8 @@ describe('Cards Type Component', () => {
     render(
       <MemoryRouter>
         <CardsType
-          key={999}
-          typeId={999}
+          key="999"
+          typeId="999"
           typeName="Spell Card"
           typeCount={50}
         />
@@ -35,8 +35,8 @@ describe('Cards Type Component', () => {
     const { container } = render(
       <MemoryRouter>
         <CardsType
-          key={999}
-          typeId={999}
+          key="888"
+          typeId="888"
           typeName="Spell Card"
           typeCount={50}
         />

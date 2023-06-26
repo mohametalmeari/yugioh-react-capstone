@@ -8,7 +8,7 @@ import monsterTypeImg from '../images/1.png';
 import otherTypeImg from '../images/2.png';
 
 const Details = () => {
-  const type = window.location.pathname.split('/').slice(1).join('/').replace(/-/g, ' ');
+  const type = window.location.pathname.split('/type-')[1].replace(/-/g, ' ');
   const { detailsList, isLoading } = useSelector((state) => state.details);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -46,7 +46,7 @@ const Details = () => {
           {isLoading && <p>Loading...</p>}
           {!isLoading && detailsList.map((item) => (
             <CardDetails
-              key={item.raceId}
+              key={item.raceKay}
               cardsRace={item.race}
               cardsCount={item.count}
             />

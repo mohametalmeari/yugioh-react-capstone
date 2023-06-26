@@ -46,7 +46,7 @@ describe('Details Slice', () => {
 
   test('renders fetched data', async () => {
     delete window.location;
-    window.location = { pathname: '/Normal Monster' };
+    window.location = { pathname: '/type-Normal-Monster' };
     mockAxios.get.mockImplementationOnce(() => Promise.resolve({
       data: mockedData,
     }));

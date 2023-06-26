@@ -8,12 +8,12 @@ describe('Cards Details Component', () => {
   beforeEach(() => {
     cleanup();
     delete window.location;
-    window.location = { pathname: '/Union-Effect-Monster' };
+    window.location = { pathname: '/type-Union-Effect-Monster' };
   });
   afterEach(() => {
     cleanup();
   });
-  test('renders race', () => {
+  test('renders race', async () => {
     render(
       <MemoryRouter>
         <Provider store={store}>
