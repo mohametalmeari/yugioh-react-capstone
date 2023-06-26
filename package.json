@@ -1,6 +1,6 @@
 {
-  "homepage": "https://mohametalmeari.github.io/yugi-cards",
-  "name": "yugi-cards",
+  "homepage": "https://mohametalmeari.github.io/yugioh-react-capstone",
+  "name": "yugioh-react-capstone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
