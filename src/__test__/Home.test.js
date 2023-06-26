@@ -1,9 +1,9 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { act } from 'react-test-renderer';
 import store from '../Redux/store';
 import Home from '../components/Home';
-import { act } from 'react-test-renderer';
 
 describe('Home App', () => {
   afterEach(() => cleanup());
