@@ -68,10 +68,12 @@ Includes the following features...
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Open the link bellow:
+> Open the links bellow:
 <!-- > Comming soon ... -->
 
- - [Live Demo Link](https://mohametalmeari.github.io/yugi-cards)
+ - [Live Demo Link](https://mohametalmeari.github.io/yugioh-react-capstone)
+ 
+ - [Demonstration Video](https://youtu.be/Rus0_eRMSZw)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,6 +151,7 @@ You can deploy this project using:
 - [ ] **Cards Info Page**
 - [ ] **Animated Logo**
 - [ ] **Animated Buttons**
+- [ ] **Desktop Version**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -177,7 +180,7 @@ We invite you to share this project with others and provide a favorable review i
 
 ## 🙏 Acknowledgments <a name="acknowlednpments"></a>
 
-> The original design idea for this web page was created by Microverse Team.
+> The original design idea for this web page was created by Nelson Sakwa.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

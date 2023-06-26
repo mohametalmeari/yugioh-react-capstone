@@ -67,7 +67,7 @@ header {
 .header-content {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   width: 50%;
   z-index: 2;
