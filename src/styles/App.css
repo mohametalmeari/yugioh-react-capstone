@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --lightlist-color: #4369b2;
+  --darklist-color: #3c5e9e;
+  --light-color: #5385de;
+  --dark-color: #35548b;
+  --text-color: #fff;
+  --black-color: #1d1d1d;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav-link,
+.active {
+  padding: 3px 3px 0;
+}
+
+body {
+  background-color: var(--light-color);
+}
+
+nav {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  padding: 1rem 0.6rem;
+  background-color: var(--dark-color);
+  font-family: 'Gill Sans', sans-serif;
+}
+
+nav span {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+}
+
+header {
+  display: flex;
+  justify-content: stretch;
+  gap: 1rem;
+  aspect-ratio: 2/1;
+  padding: 1rem;
+  position: relative;
+}
+
+.header-img {
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  z-index: 2;
+}
+
+h1 {
+  white-space: nowrap;
+  padding-bottom: 0.4rem;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 600;
+}
+
+h2,
+h3 {
+  font-family: 'Gill Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+.races-title {
+  padding-bottom: 0.4rem;
+}
+
+.list-title {
+  background-color: var(--dark-color);
+  font-size: 16px;
+  padding: 0.2rem 0.6rem;
+  height: 100%;
+}
+
+.home-list {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.home-list > :nth-child(4n),
+.home-list > :nth-child(4n+1),
+.details-list > :nth-child(odd) {
+  background-color: var(--light-color);
+}
+
+.home-list > :nth-child(4n+2),
+.home-list > :nth-child(4n+3),
+.details-list > :nth-child(even) {
+  background-color: var(--darklist-color);
+}
+
+.cards-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.2rem 0.2rem 1rem;
+  position: relative;
+  aspect-ratio: 1/1;
+}
+
+.card-details {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem 0.6rem;
+  align-items: center;
+}
+
+.type-img {
+  position: absolute;
+  margin: 10%;
+  width: 70%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.streched-gap {
+  flex: 1;
+}
+
+.type-title {
+  text-align: end;
+  padding: 0 0.6rem 0.2rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.race-title {
+  flex: 1;
+  font-weight: 600;
+}
+
+.type-count {
+  text-align: end;
+  padding: 0 0.6rem 0;
+  z-index: 2;
+}
+
+svg {
+  height: 1.5rem;
+  color: var(--text-color);
+}
