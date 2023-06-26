@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/yugi-cards/static/css/main.eb0f3854.css",
+    "main.js": "/yugi-cards/static/js/main.8407fa30.js",
+    "static/js/787.fc1a71a1.chunk.js": "/yugi-cards/static/js/787.fc1a71a1.chunk.js",
+    "static/media/1.png": "/yugi-cards/static/media/1.c6132eb65641cf88328d.png",
+    "static/media/5.png": "/yugi-cards/static/media/5.84359fb9aad8e3fa9584.png",
+    "static/media/2.png": "/yugi-cards/static/media/2.15f56671254df2bf87a5.png",
+    "index.html": "/yugi-cards/index.html",
+    "main.eb0f3854.css.map": "/yugi-cards/static/css/main.eb0f3854.css.map",
+    "main.8407fa30.js.map": "/yugi-cards/static/js/main.8407fa30.js.map",
+    "787.fc1a71a1.chunk.js.map": "/yugi-cards/static/js/787.fc1a71a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb0f3854.css",
+    "static/js/main.8407fa30.js"
+  ]
+}
