@@ -158,8 +158,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Share and Review!
-
 We invite you to share this project with others and provide a favorable review if you find it to be useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
