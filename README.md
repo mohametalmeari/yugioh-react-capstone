@@ -5,7 +5,7 @@
   <img src=".\src\images\icon.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>YU-GI-OH! README</b></h3>
+  <h3><b>YU-GI-OH! - README</b></h3>
 
 </div>
 
@@ -28,7 +28,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowlednpments](#acknowlednpments)
+- [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
@@ -42,8 +42,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Our tech stack consisting of React for the front-end.
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -54,22 +52,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Key Features of YU-GI-OH Website
-
-
-Includes the following features...
-
-- **Show the number of cards categorized by type**
-- **For every type, show the number of cards categorized by race**
+- **Categorize cards by type**
+- **Categorize cards by race**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Open the links bellow:
-<!-- > Comming soon ... -->
 
  - [Live Demo Link](https://mohametalmeari.github.io/yugioh-react-capstone)
  
@@ -81,17 +71,15 @@ Includes the following features...
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> A new developer can use this project as a guide to creating a collection cards app, or any other kind of collections, that fetches data from an API.
-
 To get a local copy up and running, follow these steps.
-
 
 ### Prerequisites
 
 In order to run this project you need:
 
 ```sh
-  npm start
+  npm install
+  npm run build
 ```
 
 ### Setup
@@ -105,8 +93,11 @@ Clone this repository to your desired folder:
 
 ### Usage
 
-How to open your project in the browser? 
-Double click on HTML file and the HTML file will be open in your browser.
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
 
 ### Run tests
 
@@ -121,7 +112,6 @@ To run tests, run the following command:
 You can deploy this project using:
 
 ```sh
-  npm install gh-pages
   npm run deploy 
 ```
 
@@ -131,13 +121,11 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-> This project was done by Mohamad.
+👤 **Mohamad**
 
-👤 **Mohamad Almeari**
-
-- GitHub: [@githubhandle](https://github.com/mohametalmeari)
-- Twitter: [@twitterhandle](https://twitter.com/MohametAlmeari)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamet-almeari)
+- GitHub: [@mohametalmeari](https://github.com/mohametalmeari)
+- Twitter: [@MohametAlmeari](https://twitter.com/MohametAlmeari)
+- LinkedIn: [mohamet-almeari](https://www.linkedin.com/in/mohamet-almeari)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,15 +158,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Share and Review!
-
 We invite you to share this project with others and provide a favorable review if you find it to be useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDnpmENTS -->
+<!-- ACKNOWLEDGMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowlednpments"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > The original design idea for this web page was created by Nelson Sakwa.
 
