@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/yugioh-react-capstone/static/css/main.eb0f3854.css",
+    "main.css": "/yugioh-react-capstone/static/css/main.e997ba25.css",
     "main.js": "/yugioh-react-capstone/static/js/main.98fdba8e.js",
     "static/js/787.dc232aac.chunk.js": "/yugioh-react-capstone/static/js/787.dc232aac.chunk.js",
     "static/media/1.png": "/yugioh-react-capstone/static/media/1.c6132eb65641cf88328d.png",
     "static/media/5.png": "/yugioh-react-capstone/static/media/5.84359fb9aad8e3fa9584.png",
     "static/media/2.png": "/yugioh-react-capstone/static/media/2.15f56671254df2bf87a5.png",
     "index.html": "/yugioh-react-capstone/index.html",
-    "main.eb0f3854.css.map": "/yugioh-react-capstone/static/css/main.eb0f3854.css.map",
+    "main.e997ba25.css.map": "/yugioh-react-capstone/static/css/main.e997ba25.css.map",
     "main.98fdba8e.js.map": "/yugioh-react-capstone/static/js/main.98fdba8e.js.map",
     "787.dc232aac.chunk.js.map": "/yugioh-react-capstone/static/js/787.dc232aac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb0f3854.css",
+    "static/css/main.e997ba25.css",
     "static/js/main.98fdba8e.js"
   ]
 }
