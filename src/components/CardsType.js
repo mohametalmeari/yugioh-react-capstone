@@ -11,7 +11,7 @@ const CardsType = ({ typeId, typeName, typeCount }) => (
     <div className="cards-type">
       <img data-testid="img-2" className="type-img" src={typeName.includes('Monster') ? monsterTypeImg : otherTypeImg} alt="Type" />
       <ArrowIcon />
-      <div className="streched-gap" />
+      <div className="stretched-gap" />
       <h3 className="type-title">{typeName}</h3>
       <p className="type-count">
         {typeCount}

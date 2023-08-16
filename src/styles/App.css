@@ -102,14 +102,7 @@ h3 {
   grid-template-columns: auto auto;
 }
 
-.home-list > :nth-child(4n),
-.home-list > :nth-child(4n+1),
-.details-list > :nth-child(odd) {
-  background-color: var(--light-color);
-}
-
-.home-list > :nth-child(4n+2),
-.home-list > :nth-child(4n+3),
+.home-list > *,
 .details-list > :nth-child(even) {
   background-color: var(--darklist-color);
 }
@@ -140,7 +133,7 @@ h3 {
   z-index: 1;
 }
 
-.streched-gap {
+.stretched-gap {
   flex: 1;
 }
 
@@ -165,4 +158,46 @@ h3 {
 svg {
   height: 1.5rem;
   color: var(--text-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-list > :nth-child(4n+2),
+  .home-list > :nth-child(4n+3) {
+    background-color: var(--light-color);
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .home-list {
+    grid-template-columns: auto auto auto;
+  }
+
+  .home-list > :nth-child(4n+2),
+  .home-list > :nth-child(4n+4) {
+    background-color: var(--light-color);
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .home-list {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .home-list > :nth-child(8n),
+  .home-list > :nth-child(8n+1),
+  .home-list > :nth-child(8n+3),
+  .home-list > :nth-child(8n+6) {
+    background-color: var(--light-color);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-list {
+    grid-template-columns: auto auto auto auto auto;
+  }
+
+  .home-list > :nth-child(4n + 3),
+  .home-list > :nth-child(4n + 1) {
+    background-color: var(--light-color);
+  }
 }
