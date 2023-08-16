@@ -28,7 +28,7 @@ const Details = () => {
       </nav>
       <header>
         <img data-testid="img-3" className="header-img" src={type.includes('Monster') ? monsterTypeImg : otherTypeImg} alt="Type" />
-        <div className="streched-gap" />
+        <div className="stretched-gap" />
         <div className="header-content">
           <h2 className="races-title">
             {type}
