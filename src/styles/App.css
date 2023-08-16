@@ -182,9 +182,10 @@ svg {
   .home-list {
     grid-template-columns: auto auto auto auto;
   }
-  .home-list > :nth-child(8n), 
-  .home-list > :nth-child(8n+1), 
-  .home-list > :nth-child(8n+3), 
+
+  .home-list > :nth-child(8n),
+  .home-list > :nth-child(8n+1),
+  .home-list > :nth-child(8n+3),
   .home-list > :nth-child(8n+6) {
     background-color: var(--light-color);
   }
@@ -194,8 +195,9 @@ svg {
   .home-list {
     grid-template-columns: auto auto auto auto auto;
   }
-  .home-list > :nth-child(4n + 3),  
-  .home-list > :nth-child(4n + 1){
+
+  .home-list > :nth-child(4n + 3),
+  .home-list > :nth-child(4n + 1) {
     background-color: var(--light-color);
   }
 }
